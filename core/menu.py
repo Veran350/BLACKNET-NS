@@ -11,16 +11,18 @@ def run_tool(choice):
     elif choice == "4":  
         os.system("python3 core/phone_tools/tracker/ip_locator.py")  
     elif choice == "5":  
-        os.system("bash core/phone_tools/destroyer/bootloop_android.sh")  
+        os.system("python3 core/phone_tools/tracker/sim_locator.py")  
     elif choice == "6":  
-        os.system("python3 core/finance_tools/fake_alert.py")  
+        os.system("bash core/phone_tools/destroyer/bootloop_android.sh")  
     elif choice == "7":  
-        os.system("python3 core/finance_tools/mtn_gen.py")  
+        os.system("python3 core/finance_tools/fake_alert.py")  
     elif choice == "8":  
-        os.system("bash core/scripts/wifi_apocalypse.sh")  
+        os.system("python3 core/finance_tools/mtn_gen.py")  
     elif choice == "9":  
-        os.system("python3 core/zero_day/satellite_hijack/griffin_attack.py")  
+        os.system("bash core/scripts/wifi_apocalypse.sh")  
     elif choice == "10":  
+        os.system("python3 core/zero_day/satellite_hijack/griffin_attack.py")  
+    elif choice == "11":  
         os.system("python3 core/zero_day/cve-2024-1337.py")  
     else:  
         print("Invalid choice!")  
@@ -31,13 +33,14 @@ def main_menu():
     1. Deploy RAT  
     2. Launch Phishing  
     3. Generate CC  
-    4. Track Phone IP  
-    5. Brick Devices  
-    6. Fake Alerts  
-    7. Recharge Generator  
-    8. WiFi Ripper  
-    9. GPS Spoofer  
-    10. Zero-Day Exploits  
+    4. Track IP Address  
+    5. Track Phone Number  
+    6. Brick Devices  
+    7. Fake Alerts  
+    8. Recharge Generator  
+    9. WiFi Ripper  
+    10. GPS Spoofer  
+    11. Zero-Day Exploits  
     99. EXIT  
     """)  
     choice = input("Choice: ")  
