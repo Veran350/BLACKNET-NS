@@ -16,5 +16,6 @@ A fully automated hacking toolkit for penetration testing and red teaming.
 1. **Update Termux**:  
    ```bash  
    pkg update -y && pkg upgrade -y
+   ```bash
    pkg install python git -y  
      
