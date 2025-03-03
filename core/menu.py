@@ -28,8 +28,10 @@ def run_tool(choice):
         print("Invalid choice!")  
 
 def main_menu():  
-    show_banner()  
-    print("""  
+    while True:  
+        os.system("clear")  
+        show_banner()  
+        print("""  
     1. Deploy RAT  
     2. Launch Phishing  
     3. Generate CC  
@@ -42,14 +44,12 @@ def main_menu():
     10. GPS Spoofer  
     11. Zero-Day Exploits  
     99. EXIT  
-    """)  
-    choice = input("Choice: ")  
-    return choice  
-
-if __name__ == "__main__":  
-    while True:  
-        os.system("clear")  
-        choice = main_menu()  
+        """)  
+        choice = input("Choice: ")  
         if choice == "99":  
             break  
         run_tool(choice)  
+        input("\nPress Enter to return to the menu...")  
+
+if __name__ == "__main__":  
+    main_menu()  
